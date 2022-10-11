@@ -109,7 +109,6 @@ header{
     justify-content: space-between;
     text-align: left;
     list-style: none;
-    max-width: 100%;
     padding: 0%;
 }
 
@@ -131,6 +130,7 @@ footer section{
 
 footer{
     padding: 100px 80px;
+    background-color: white;
 }
 
 
@@ -209,7 +209,7 @@ footer{
 }
 
 
-@media(min-width: 606px){
+@media(min-width: 426px){
     /*Tablets*/
 
 
@@ -249,6 +249,44 @@ footer{
 
 
 }
+body{
+    height: 100vh;
+    background-color: var(--Gris-claro);
+}
+
+form{
+    padding: 20px;
+    
+}
+
+.campo-form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.campo-form input{
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+}
+
+.caja-boton{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.caja-boton button{
+    width: 50vh;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black
+
+}
+
+
 @media(min-width: 769px){
     /*Desktop*/
     
