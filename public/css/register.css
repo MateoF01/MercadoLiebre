@@ -12,22 +12,24 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.titulo{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    font-size: 25px;
-
-}
-
 body{
     height: 100vh;
     background-color: var(--Gris-claro);
 }
 
-form{
+h2{
     padding: 20px;
-    
+}
+
+.campo-form p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+}
+
+form{
+    padding: 20px;    
 }
 
 .campo-form {
@@ -41,20 +43,32 @@ form{
     border-radius: 5px;
     border: none;
     height: 25px;
+    font-size: 18px;
 }
 
 .caja-boton{
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
+    
 }
 
 .caja-boton button{
     width: 50vh;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
-    border: 1px solid black
+    border: none;
+    color: white;
+    background-color: var(--Celeste);
+    font-size: 20px;
 
+    transition: background-color 600ms;
+
+}
+
+.caja-boton button:hover{
+    cursor: pointer;
+    background-color: #0022AA;
 }
 
 

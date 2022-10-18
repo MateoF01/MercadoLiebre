@@ -11,38 +11,14 @@
     box-sizing: border-box;
 }
 
-main{
-    width: 100vw;
-    margin: auto;
-    padding: 40px;
-    background-color: var(--Gris-claro);
-}
-
-article{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: white;
-    margin-left: 2px;
-    margin-right: 2px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    width: 100%;
-    justify-content: space-around;
-}
-
-
-
-article img {
-    display: block;
-    margin: auto;
-    width: 50%;
-}
+/* -------- Header -------- */
 
 header{
     padding: 20px;
     background-color: var(--Amarillo);
 }
 
-.encabezado{
+.header-parte-superior{
     display: flex;    
     flex-wrap: wrap;
     justify-content: space-between;
@@ -56,7 +32,7 @@ header{
 
 }
 
-.nav-bar{
+.barra-de-busqueda{
     display: flex;
     text-align: left;
     justify-content: space-between;
@@ -90,80 +66,101 @@ header{
     margin: auto;
 }
 
-.banner{
-    background-color: var(--Gris-claro);
-}
-.banner img{
-    width: 100%;
-}
-
-
-.botones-header{
+.nav-bar{
     display: none;
     justify-content: space-between;
     width: 100%;
 }
 
-.botones-header ul{
+.nav-bar ul{
     display: flex;
     justify-content: space-between;
     text-align: left;
     list-style: none;
+    max-width: 100%;
     padding: 0%;
 }
 
-.botones-header ul li{
+.nav-bar ul li{
     margin: 0px 15px;
 }
 
 
-a{
+.nav-bar a{
     color: black;
     text-decoration: none;
 }
 
 
-footer section{
-    text-align: center;
-    padding: 5px;
+
+/* -------- Form -------- */
+
+
+body{
+    height: 100vh;
+    background-color: var(--Gris-claro);
+
 }
+
+form{
+    padding: 20px;
+}
+
+.campo-form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.campo-form input{
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    font-size: 18px;
+}
+
+.caja-boton{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.caja-boton button{
+    width: 50vh;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: var(--Celeste);
+    font-size: 20px;
+    transition: background-color 600ms;
+
+}
+
+.caja-boton button:hover{
+    cursor: pointer;
+    background-color: #0022AA;
+
+}
+
+
+
+/* -------- Footer -------- */
+
 
 footer{
-    padding: 100px 80px;
-    background-color: white;
-}
-
-
-
-
-
-
-.cuerpos-de-texto {
-    font-size: 12px;
-}
-
-.titulares{
-    font-size: 24px;
-}
-
-.precios {
-    font-size: 18px;
-    width: 30%;
-}
-
-.descuentos {
-    font-size: 16px;
-    color: var(--Verde);
-    width: 70%;
-    text-align: center;
-    align-self: center;
-}
-
-
-.descripciones {
+    padding: 100px 60px;
     font-size: 16px;
     color: var(--Gris-oscuro);
 }
+
+
+footer section{
+    text-align: center;
+    padding: 10px 30px; 
+}
+
 
 .titulos-footer{
     font-size: 20px;
@@ -183,33 +180,11 @@ footer{
 
 
 
-.precio-descuento{
-    display: flex;
-
-}
-
-.truck-icon{
-    color: var(--Verde);
-    align-self: right;
-
-}
-.conjunto-articulos{
-    display: flex;    
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+/* -------- Media Queries -------- */
 
 
-.descripcion{
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    display: none;
-    flex-direction: column;
-    
-}
 
-
-@media(min-width: 426px){
+@media(min-width: 606px){
     /*Tablets*/
 
 
@@ -217,17 +192,7 @@ footer{
         display: none;
     }
 
-    article{
-        width: 45%;
-
-    }
-
-
-    .descripcion{
-        display: flex;    
-    }
-
-    .botones-header{
+    .nav-bar{
         display: flex;
     }
 
@@ -236,7 +201,7 @@ footer{
     
     }
     
-    .nav-bar{
+    .barra-de-busqueda{
         width: 30%;
     }
     
@@ -249,53 +214,10 @@ footer{
 
 
 }
-body{
-    height: 100vh;
-    background-color: var(--Gris-claro);
-}
-
-form{
-    padding: 20px;
-    
-}
-
-.campo-form {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.campo-form input{
-    border-radius: 5px;
-    border: none;
-    height: 25px;
-}
-
-.caja-boton{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-}
-
-.caja-boton button{
-    width: 50vh;
-    height: 30px;
-    border-radius: 10px;
-    border: 1px solid black
-
-}
-
-
 @media(min-width: 769px){
     /*Desktop*/
-    
-    article{
 
-        width: 24%;
-
-        
-    
+    .informacion-footer{
+        display: flex;
     }
-
 }

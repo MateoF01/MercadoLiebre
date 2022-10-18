@@ -11,24 +11,27 @@
     <title>Registro</title>
 </head>
 <body>
+
+    <h2>Completá tus datos!</h2>
+
     <form action="/" method="post">
 
         <div class="campo-form">
-            <input type="text" name="nombreYApellido" required placeholder="Nombre y apellido">
+            <input type="text" name="nombreYApellido" required placeholder="Nombre y apellido" minlength="5">
         </div>
 
         <div class="campo-form">
-            <input type="text" name="nombreUsuario" required placeholder="Nombre de usuario">
+            <input type="text" name="nombreUsuario" required placeholder="Nombre de usuario" minlength="5">
         </div>
         <div class="campo-form">
             <input type="email" name="emailUsuario" required placeholder="E-mail">
         </div>
         <div class="campo-form">
-            <label>Fecha de nacimiento</label>
+            <p>Fecha de nacimiento</p>
             <input type="date" name="fechaNacimiento" required>
         </div>
         <div class="campo-form">
-            <input type="text" name="domicilioUsuario" required placeholder="Domicilio">
+            <input type="text" name="domicilioUsuario" required placeholder="Domicilio" >
         </div>
 
         <div class="campo-form">
@@ -51,17 +54,17 @@
 
 
         <div class="campo-form">
-            <label>Foto de usuario</label>
+            <p>Foto de usuario</p>
             <input type="file" name="fotoUsuario">
         </div>
 
 
         <div class="campo-form">
-            <input type="password" name="passwordUsuario" placeholder="Contraseña" required>
+            <input type="password" name="passwordUsuario" placeholder="Contraseña" required minlength="8">
         </div>
 
         <div class="campo-form">
-            <input type="password" name="passwordUsuario" placeholder="Confirmar Contraseña" required>
+            <input type="password" name="passwordUsuario" placeholder="Confirmar Contraseña" required minlength="8">
         </div>
 
         <div class="caja-boton">
